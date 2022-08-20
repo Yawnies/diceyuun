@@ -181,13 +181,6 @@ hr {
   transition: 0.3s;
 }
 
-.icons2 {
-  width: 38px;
-  margin-left: 8px;
-  margin-right: 8px;
-  transition: 0.3s;
-}
-
 .icon1:hover > .icons1 {
   stroke: #E2E2E2;
   cursor: pointer;
