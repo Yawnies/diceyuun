@@ -1,0 +1,219 @@
+html {
+  background-color: #0F090C;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Kreon", serif;
+  font-size: 72px;
+  margin: 15px 0 0 0;
+  color: #7C0E38;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Kreon", serif;
+  color: #9E104A;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: "Kreon", serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 3px 0 20px 0;
+  color: #E2E2E2;
+}
+
+.dynamic-text {
+  transition: opacity 1s;
+}
+
+p {
+  font-family: "Kreon", serif;
+  text-align: center;
+  color: #998894;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+span {
+  color: #9E104A;
+}
+
+button {
+  margin-bottom: 30px;
+}
+
+hr {
+  width: 250px;
+  border-color: #9E104A;
+  border-width: 2px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.decoration {
+  min-width: 230px;
+  min-height: 230px;
+  margin: 0 8px 0 8px;
+}
+
+.main-container {
+  width: 700px;
+  background-color: #160B11;
+  border-radius: 35px;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divider {
+  width: 230px;
+}
+
+.desc {
+  margin: 40px 0 40px 0;
+}
+
+/* button --------------------------------------------------*/
+#rollbutton {
+  width: 150px;
+  height: 40px;
+  border-color: #7C0E38;
+  border-style: solid;
+  border-radius: 25px;
+  background-color: transparent;
+  margin-bottom: 25px;
+
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Kreon", serif;
+  color: #E83497;
+
+  transition: 0.3s;
+}
+
+#rollbutton:hover {
+  background-color: #7C0E38;
+  cursor: pointer;
+  border-color: transparent;
+
+  color: #160B11;
+}
+/* button --------------------------------------------------*/
+
+.dicerollers {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.dice-animation {
+  transform: rotate(3600deg);
+}
+
+.dice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dice-img1, .dice-img2 {
+  width: 150px;
+  transition: transform 2000ms ease-in;
+}
+
+.winner {
+  width: 160px;
+}
+
+.winner-text {
+  margin: 80px 40px 0 40px;
+  font-size: 20px;
+}
+
+.win-colors1 {
+  color: green;
+}
+
+.win-colors2 {
+  color: yellow;
+}
+
+.invisible { /* class used to hide win text */
+  visibility: hidden;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-wrapper {
+  margin: 10px 0 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.icons1, .icons2 {
+  width: 32px;
+  margin-left: 8px;
+  margin-right: 8px;
+  transition: 0.3s;
+}
+
+.icons2 {
+  width: 38px;
+  margin-left: 8px;
+  margin-right: 8px;
+  transition: 0.3s;
+}
+
+.icon1:hover > .icons1 {
+  stroke: #E2E2E2;
+  cursor: pointer;
+}
+
+.icon2:hover > .icons2 {
+  stroke: #1DA1F2;
+  cursor: pointer;
+}
+
+/* animations */
+
+.fade-in {
+  animation: fadeIn 2s;
+}
+
+.fade-out {
+  animation: fadeOut 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
